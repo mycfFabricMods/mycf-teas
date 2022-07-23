@@ -1,5 +1,6 @@
 package io.mycf.teas;
 
+import io.mycf.teas.items.Items;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,10 +13,9 @@ public class TeasMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		LOGGER.info("Initialising mycf's tea mod!");
 
-		LOGGER.info("Hello Fabric world!");
+		// Register all Items
+		Items.registerItems();
 	}
 }
