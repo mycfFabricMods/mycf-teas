@@ -12,7 +12,7 @@ object Items:
   private val itemRegistry: mutable.LinkedHashMap[String, Item] = mutable.LinkedHashMap()
 
   /**
-   * Register [net.minecraft.item.Item]'s in here.
+   * Register [[net.minecraft.item.Item]]'s in here.
    */
   val COOL_ITEM: Item = addItem("cool_item", Item(Item.Settings().maxCount(64).group(ItemGroup.MISC)))
 
