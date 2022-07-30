@@ -1,6 +1,6 @@
-package io.mycf.teas.items
+package io.mycf.tea.api.items
 
-import io.mycf.teas.ScalaUtils.MOD_ID
+import io.mycf.tea.api.ScalaUtils.MOD_ID
 import net.minecraft.item.{Item, ItemGroup}
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry

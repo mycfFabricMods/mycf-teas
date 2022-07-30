@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "mycf-teas",
+  "id": "mycf_tea",
   "version": "${version}",
 
   "name": "Teas Mod",
@@ -13,22 +13,23 @@
   },
 
   "license": "CC BY SA NC",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/tea/impl/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.mycf.teas.TeasMod"
+      "io.mycf.tea.impl.TeasMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "mycf_tea.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
+    "java": ">=17",
+    "mycf_tea_api": "*"
   },
   "suggests": {
     "another-mod": "*"
